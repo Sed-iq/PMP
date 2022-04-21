@@ -1,0 +1,100 @@
+/* body {
+    display: none;
+} */
+#login {
+    min-height: 300px;
+    width: 60%;
+    background: linear-gradient(to top left,rgb(1, 43, 1),rgb(59, 116, 59))
+}
+.r {
+    transform: rotate(-5.5deg);
+    filter: grayscale(100%)
+}
+#login::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient( rgb(33, 75, 25),rgb(23, 156, 61));
+    clip-path: circle(13% at right 65%);
+    z-index: -1;
+}
+#login::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient( rgb(88, 187, 66),rgb(1, 53, 16));
+    clip-path: circle(12% at left 10%);
+    z-index: -1;
+}
+#sign:hover {
+    /* Sign button */
+    transform: scale(1.078)
+}
+#signin {
+    /* Whole inner sign in form */
+    min-height: 100%;
+    overflow: hidden;
+}
+#profile {
+    position: relative;
+}
+#profile::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient( rgb(33, 75, 25),rgb(23, 156, 61));
+    clip-path: circle(10% at right 0%);
+}
+#profile::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient( rgb(33, 75, 25),rgb(23, 156, 61));
+    clip-path: circle(10% at left 100%);
+}
+.logos {
+    background: white;
+    width: 40%;
+    height: 44px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: 600ms;
+}
+.logos img {
+    width: 13%;
+    margin: 10px;
+}
+.logos p {
+   text-align: center;
+   padding-left: 14px;
+   padding-top: 6px;
+}
+.logos:nth-child(1):hover {
+    background-color: lightblue;
+}
+.logos:nth-child(2):hover {
+    background-color: lightgreen;
+}

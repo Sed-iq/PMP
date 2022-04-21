@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%= data.Firstname%> || KSM</title>
+    <link rel="stylesheet" href="/public/css/output.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/animate.css">
+</head>
+
+<body>
+    <section class="w-full h-full">
+        <!-- Heading Section -->
+
+        <div class="w-full flex flex-row justify-between animate__animated animate__fadeInDown animate__faster bg-gray-100 p-2">
+
+            <div class="flex flex-row animate__animated animate__bounceInLeft">
+                <img src="/public/images/ksm.png" alt="" class="w-7 mx-2 h-7">
+                <h2 class="text-green-900 font-semibold">KSM</h2>
+            </div>
+            <!-- <div class="pl-2"> -->
+            <!-- <h2>
+                    This is supposed to be a flash message
+                </h2> -->
+            <!-- </div>
+        </div>
+     -->
+            <div class="flex flex-row animate__animated animate__bounceInRight">
+                <div class="border-2 border-green-700 hover:bg-green-400 hover:border-white h-10 hover:text-white transition text-center rounded w-48 pt-1">
+                    Home
+                </div>
+                <div onclick="window.location = '/profile'" id="seller" class="border-2 border-green-300 relative  flex justify-between flex-row hover:bg-green-300 hover:border-white transition w-30 py-1 text-center rounded ml-3 px-3 ">
+                    New Shop
+                    <img src="/public/images/cart.svg" alt="" class="w-7 h-7">
+                </div>
+            </div>
+        </div>
+
+      <div id="profile" class="w-full h-64">
+          
+      </div>
+
+       
+    </section>
+</body>
+
+</html>
