@@ -4,3 +4,4 @@ node_modules
 tailwind.config.js
 postcss.config.js
 data.txt
+cert

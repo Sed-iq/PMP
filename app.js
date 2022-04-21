@@ -3,13 +3,11 @@
 // By Sediq Abdullahi;
 /* **** */
 const fs = require('fs');
-const key = fs.readFileSync('./cert/CA/localhost/localhost.decrypted.key');
-const cert = fs.readFileSync('./cert/CA/localhost/localhost.crt');
 const express = require('express'),
-    http = require('https'),
+    http = require('http'),
     env = require('dotenv').config(),
     app = express(),
-    server = http.createServer({ key, cert }, app),
+    server = http.createServer(app),
     PORT = process.env.PORT,
     Router = require('./modules/router.js'),
     connect = require('./modules/db.js')
