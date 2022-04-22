@@ -1,6 +1,5 @@
 node_modules
 .vscode
-.env
 tailwind.config.js
 postcss.config.js
 data.txt
