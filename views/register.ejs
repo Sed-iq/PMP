@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KSM || Resgister</title>
+    <!-- Tailwind animatecss , -->
+    <link rel="stylesheet" href="/public/css/done.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/animate.css">
+    <!-- Scripts -->
+    <script src="/public/js/jquery.js"></script>
+    <script defer src="/public/js/main.js"></script>
+</head>
+
+<body>
+    <section id="bg" class="container3 relative h-full w-full">
+        <div class="flex flex-row justify-between items-center border-2 w-full h-full">
+            <div class="h-full w-full mr-5 ">
+                <!-- image side -->
+                <div class="p-2 ml-3 w-full flex flex-row">
+                    <div>
+                        <img src="/public/images/ksm.png" alt="" class="w-7 h-7">
+                    </div>
+                    <div class="pl-2">
+                        <h2 class="text-green-900 font-semibold">KSM</h2>
+                        <!-- <h2>
+                            This is supposed to be a flash message
+                        </h2> -->
+                    </div>
+                </div>
+                <div class="flex flex-col animate__animated animate__bounceIn justify-center place-items-center p-4 mt-40 w-full">
+                    <div>
+                        <h2 class="text-5xl text-center font-light text-black">
+                            <i>Join us</i>
+                        </h2>
+                    </div>
+                    <div class="mt-5">
+                        <h3 class="text-3xl text-center text-gray-700">
+                            Be a part of the family.
+                        </h3>
+                        <p class=" text-center pt-1 text-gray-700">
+                            Link your physical shop to the portal with us.
+                            <br> Become a marketer buy and sell goods via our portal.
+                        </p>
+                    </div>
+                    <!-- <a href="https://www.devcreed.com"> -->
+                    <div class="p-2 flex flex-row mt-4 transition-colors hover:text-white hover:bg-green-400 hover:border-white border-2 border-green-700 rounded ">
+                        <p class=" text-center">Made by DevCreed </p>
+                        <div>
+                            <img src="/public/images/devcreed.png" alt="" class="w-7 ml-2 h-7">
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+
+            </div>
+            <!-- Login Page -->
+            <div id="login" class="animate__animated animate__fadeInRight relative animate__faster rounded bg-white mx-5">
+                <!-- Sign in page -->
+
+                <div id="signin" class="absolute w-full">
+                    <h2 class="text-3xl font-light px-8 pt-8 text-white">
+                        Login
+                    </h2>
+                    <h2 class=" pt-3 px-8 mt-10 text-white ">
+                        &HorizontalLine;&HorizontalLine; Sign up with &HorizontalLine;&HorizontalLine;
+                    </h2>
+                    <div class="flex flex-col p-4 justify-center items-center  mt-7 w-full">
+                        <div onclick="window.location = '/auth/facebook'" class=" bg-white w-60 mb-4 rounded hover:bg-blue-200 flex ">
+                            <img src="/public/images/facebook.png" alt="" class="w-7 m-1 h-7">
+                            <p class="font-bold text-blue-700 pt-1 pl-4">Facebook</p>
+                        </div>
+                        <div onclick="window.location = '/auth/Google'" class="bg-white w-60 hover:bg-green-400 rounded flex flex-row">
+                            <img src="/public/images/google.png" alt="" class="w-5  m-2 h-5">
+                            <p class="font-bold text-green-700 hover:text-white pt-1 pl-4">
+                               Google
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>

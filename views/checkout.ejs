@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSM || Checkout</title>
+    <link rel="stylesheet" href="/public/css/output.css" />
+    <script defer src="/public/js/stripe.js"></script>
+    <script>
+      var p_key = "<%= p_key%>";
+    </script>
+    <script defer src="/public//js/main.js"></script>
+  </head>
+  <body>
+    <div class="w-full p-3 flex flex-row justify-between">
+      <div class="keys m-3 p-2">
+        <% orders.key.forEach(key=>{ %>
+        <h4 class="text-xl my-4"><%= key %>:</h4>
+        <% }) %>
+      </div>
+
+      <div class="props m-3 p-2">
+        <% orders.props.forEach(prop=>{ %>
+        <h4 class="text-xl p my-4"><%= prop %></h4>
+        <% }) %>
+      </div>
+
+      <div class="btn m-3 p-2">
+        <% for( let i = 0; i < orders.key.length; i++ ) { %>
+        <button class="bg-blue-500 btns m-2 text-white rounded p-2">
+          Checkout
+        </button>
+        <br />
+        <% } %>
+      </div>
+      <div class="btn btn- m-3 p-2">
+        <% for( let i = 0; i < orders.key.length; i++ ) { %>
+        <button class="bg-red-500 m-2 text-white rounded p-2">Delete</button>
+        <br />
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

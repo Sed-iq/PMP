@@ -1,0 +1,40 @@
+{
+  id: '468802944794686',
+  name: 'Ikki Tenrio',
+  last_name: 'Tenrio',
+  first_name: 'Ikki',
+  picture: {
+    data: {
+      height: 200,
+      is_silhouette: false,
+      url: 'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=468802944794686&height=200&width=200&ext=1648344916&hash=AeTn-t6yGoRIPQo3fpo',
+      width: 200
+    }
+  },
+  email: 'devscreed5@gmail.com'
+}
+
+
+  id: '468802944794686',
+  username: undefined,
+  displayName: 'Ikki Tenrio',
+  name: { familyName: 'Tenrio', givenName: 'Ikki', middleName: undefined },
+  gender: undefined,
+  profileUrl: undefined,
+  emails: [ { value: 'devscreed5@gmail.com' } ],
+  photos: [
+    {
+      value: 'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=468802944794686&height=200&width=200&ext=1648403199&hash=AeTsYErQvVVRQYQuyXE'
+    }
+  ],
+  provider: 'facebook',
+  _raw: '{"id":"468802944794686","name":"Ikki Tenrio","last_name":"Tenrio","first_name":"Ikki","picture":{"data":{"height":200,"is_silhouette":false,"url":"https:\\/\\/platform-lookaside.fbsbx.com\\/platform\\/profilepic\\/?asid=468802944794686&height=200&width=200&ext=1648403199&hash=AeTsYErQvVVRQYQuyXE","width":200}},"email":"devscreed5\\u0040gmail.com"}',
+  _json: {
+    id: '468802944794686',
+    name: 'Ikki Tenrio',
+    last_name: 'Tenrio',
+    first_name: 'Ikki',
+    picture: { data: [Object] },
+    email: 'devscreed5@gmail.com'
+  }
+}

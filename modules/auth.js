@@ -1,7 +1,8 @@
 const mongoose = require('mongoose'),
     User = require('./userSchema'),
-
-    isLoggedIn = (req, res, next) => {
+    isLoggedOut = (req, res, next) => {
+      // Checks if you are already logged in 
+      // Should be put at register page
         if (req.isAuthenticated()){
           res.redirect('/profile')
         }
@@ -10,15 +11,12 @@ const mongoose = require('mongoose'),
             next()
         }
     }
-
-    // Checking if the user is logged out
-    isLoggedOut = (req,res,next)=>{
+    isLoggedIn = (req,res,next)=>{
       if(req.isAuthenticated()) {
         next()
       }
       else {
         res.redirect('/register')
-        console.log('You are not logged in')
       }
     },
 
@@ -27,13 +25,13 @@ const mongoose = require('mongoose'),
       let user = new User(data)
       await user.save()
       .then(result =>{
-        console.log(result)
+        cb
       })
       .catch(err=>{
         console.log(err)
       })
     }
 
-  module.exports.logger = isLoggedIn
-  module.exports.login = isLoggedOut
+  module.exports.logger = isLoggedOut
+  module.exports.login = isLoggedIn
   module.exports.saver = saver
